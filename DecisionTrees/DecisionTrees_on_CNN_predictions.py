@@ -1,9 +1,9 @@
 import pandas as pd
 import sklearn as sk
 
-data_raw = pd.read_csv("../Datasets/IMDB.csv", low_memory=False)
+data_raw = pd.read_csv("../Datasets/IMDB_with_predictions.csv", low_memory=False)
 raw_x = data_raw.review;
-raw_y = data_raw.sentiment;
+raw_y = data_raw.CNN_Predictions;
 
 from sklearn.model_selection import train_test_split
 train_x, test_x, train_y, test_y = train_test_split(raw_x, raw_y, random_state=1000, shuffle=True, test_size=0.25)
