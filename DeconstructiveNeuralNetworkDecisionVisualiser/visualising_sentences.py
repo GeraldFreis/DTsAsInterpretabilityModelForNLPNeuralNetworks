@@ -16,7 +16,7 @@ from node import *
 from SplittingPredictions import *
 
 CNN = keras.models.load_model("../CNN_Non_Dense")
-raw_data = pd.read_csv("IMDB_sentences.csv")
+# raw_data = pd.read_csv("IMDB_sentences.csv")
 
 tree_list = list()
 

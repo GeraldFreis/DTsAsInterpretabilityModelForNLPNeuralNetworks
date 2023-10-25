@@ -16,7 +16,7 @@ from node import *
 from SplittingPredictions import *
 
 CNN = keras.models.load_model("../CNN_Non_Dense")
-raw_data = pd.read_csv("IMDB.csv")
+# raw_data = pd.read_csv("IMDB.csv")
 
 def Composing_Tree(window, maxsize, sub_intervals, data_frame, index, model):
     """Function that generates the split predictions for each paragraph, and then composes a tree from the split predictions"""
